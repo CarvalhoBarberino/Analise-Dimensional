@@ -1,0 +1,30 @@
+Recentemente tive problemas com o git.
+Ocorreu um aviso: HEAD detached from 549824a
+Demorou muito para eu conseguir resolver essa questão então vou registrar isso.
+Resolvi o problema seguindo os passos contidos nesse arquivo: https://github.com/CarvalhoBarberino/Git-notes/blob/master/Comando%20em%20git
+
+Abaixo segue o texto que ficou no meu terminal durante o processo
+
+carvalho@carvalho-Inspiron-N4050:~/Desktop/Analise Dimensional$ git status
+HEAD detached from 549824a
+nothing to commit, working directory clean
+carvalho@carvalho-Inspiron-N4050:~/Desktop/Analise Dimensional$ git checkout -b nomeAuxiliar1
+Switched to a new branch 'nomeAuxiliar1'
+carvalho@carvalho-Inspiron-N4050:~/Desktop/Analise Dimensional$ git checkout master
+Switched to branch 'master'
+carvalho@carvalho-Inspiron-N4050:~/Desktop/Analise Dimensional$ git checkout -b nomeAuxiliar2
+Switched to a new branch 'nomeAuxiliar2'
+carvalho@carvalho-Inspiron-N4050:~/Desktop/Analise Dimensional$ git checkout nomeAuxiliar2
+Already on 'nomeAuxiliar2'
+carvalho@carvalho-Inspiron-N4050:~/Desktop/Analise Dimensional$ git branch -D master
+Deleted branch master (was 549824a).
+carvalho@carvalho-Inspiron-N4050:~/Desktop/Analise Dimensional$ git checkout nomeAuxiliar1
+Switched to branch 'nomeAuxiliar1'
+carvalho@carvalho-Inspiron-N4050:~/Desktop/Analise Dimensional$ git checkout -b master
+Switched to a new branch 'master'
+carvalho@carvalho-Inspiron-N4050:~/Desktop/Analise Dimensional$ git branch -D nomeAuxiliar1
+Deleted branch nomeAuxiliar1 (was a22a053).
+carvalho@carvalho-Inspiron-N4050:~/Desktop/Analise Dimensional$ git status
+On branch master
+nothing to commit, working directory clean
+carvalho@carvalho-Inspiron-N4050:~/Desktop/Analise Dimensional$
