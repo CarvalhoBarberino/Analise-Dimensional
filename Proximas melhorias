@@ -1,3 +1,1 @@
-Foi observado que o Item "Estruturas de material resistente ao próprio peso" contem um erro conceitual. A variavél k constante elastica depende da area da seccao transversal da barra de aço.
-Portanto seria mais inteligente usar o modulo de elasticidade, modulo de Young. Porém o modulo de Young possui a mesma dimensão que a tensão de escoamento.
-Tem que se pensar sobre isso para fazer algo util.
+As equacoes do final do arquivo nao estao em LATEX. Precisa passar para o formato LATEX
